@@ -1,0 +1,43 @@
+2012/07/27 13:08:49 [trace] [system.CModule] Loading "log" application component
+2012/07/27 13:09:09 [trace] [system.CModule] Loading "log" application component
+2012/07/27 13:10:03 [trace] [system.CModule] Loading "log" application component
+2012/07/27 13:11:08 [trace] [system.CModule] Loading "log" application component
+2012/07/27 13:11:08 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/27 13:13:25 [trace] [system.CModule] Loading "log" application component
+2012/07/27 13:18:41 [trace] [system.CModule] Loading "log" application component
+2012/07/27 13:18:41 [trace] [system.CModule] Loading "db" application component
+2012/07/27 13:18:41 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/27 13:18:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `users`
+2012/07/27 13:18:41 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `users`
+2012/07/27 13:18:41 [trace] [system.db.ar.CActiveRecord] Users.findByPk()
+2012/07/27 13:18:41 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `users` `t` WHERE `t`.`id`=3 LIMIT 1
+2012/07/27 13:18:41 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/27 13:19:27 [trace] [system.CModule] Loading "log" application component
+2012/07/27 13:19:27 [trace] [system.CModule] Loading "db" application component
+2012/07/27 13:19:27 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/27 13:19:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `users`
+2012/07/27 13:19:27 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `users`
+2012/07/27 13:19:27 [trace] [system.db.ar.CActiveRecord] Users.findByPk()
+2012/07/27 13:19:27 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `users` `t` WHERE `t`.`id`=5 LIMIT 1
+2012/07/27 13:23:42 [trace] [system.CModule] Loading "log" application component
+2012/07/27 13:23:42 [trace] [system.CModule] Loading "db" application component
+2012/07/27 13:23:42 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/27 13:23:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `users`
+2012/07/27 13:23:42 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `users`
+2012/07/27 13:23:42 [trace] [system.db.ar.CActiveRecord] Users.findAll()
+2012/07/27 13:23:42 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `users` `t`
+2012/07/27 13:23:42 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/27 13:24:06 [trace] [system.CModule] Loading "log" application component
+2012/07/27 13:24:06 [trace] [system.CModule] Loading "db" application component
+2012/07/27 13:24:06 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/27 13:24:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `users`
+2012/07/27 13:24:06 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `users`
+2012/07/27 13:24:06 [trace] [system.db.ar.CActiveRecord] Users.findAll()
+2012/07/27 13:24:06 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `users` `t`
+2012/07/27 13:24:29 [trace] [system.CModule] Loading "log" application component
+2012/07/27 13:24:29 [trace] [system.CModule] Loading "db" application component
+2012/07/27 13:24:29 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/27 13:24:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `users`
+2012/07/27 13:24:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `users`
+2012/07/27 13:24:29 [trace] [system.db.ar.CActiveRecord] Users.findAll()
+2012/07/27 13:24:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `users` `t`
