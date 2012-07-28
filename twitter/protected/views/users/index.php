@@ -10,8 +10,16 @@ $this->menu=array(
 ?>
 
 <h2>Пользователи</h2>
-
+<table class="table table-bordered table-striped">
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
+        'pager'        => array(
+                            'firstPageLabel' => '<<',
+                            'prevPageLabel'  => '<',
+                            'nextPageLabel'  => '>',
+                            'lastPageLabel'  => '>>',
+                          )
+
 )); ?>
+</table>

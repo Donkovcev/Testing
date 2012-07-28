@@ -41,3 +41,99 @@
 2012/07/27 13:24:29 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `users`
 2012/07/27 13:24:29 [trace] [system.db.ar.CActiveRecord] Users.findAll()
 2012/07/27 13:24:29 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `users` `t`
+2012/07/28 00:08:46 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:10:01 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:10:01 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:10:24 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:10:24 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:10:42 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:10:42 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:11:17 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:11:17 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:11:43 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:11:43 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:11:56 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:11:56 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:12:06 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:12:06 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:13:44 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:13:44 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:14:58 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:14:58 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:15:31 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:15:31 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:15:47 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:16:07 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:16:21 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:16:24 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:43:50 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:43:50 [trace] [system.CModule] Loading "db" application component
+2012/07/28 00:43:50 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/28 00:43:50 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `google_search_terms`
+2012/07/28 00:43:50 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `google_search_terms`
+2012/07/28 00:43:50 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 00:43:50 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 00:45:14 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:45:14 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 00:45:21 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:45:48 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:45:48 [trace] [system.CModule] Loading "db" application component
+2012/07/28 00:45:48 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/28 00:45:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `google_search_terms`
+2012/07/28 00:45:48 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `google_search_terms`
+2012/07/28 00:45:48 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 00:45:48 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 00:45:51 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:45:51 [trace] [system.CModule] Loading "db" application component
+2012/07/28 00:45:51 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/28 00:45:51 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `google_search_terms`
+2012/07/28 00:45:51 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `google_search_terms`
+2012/07/28 00:45:51 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 00:45:51 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 00:45:54 [trace] [system.CModule] Loading "log" application component
+2012/07/28 00:45:54 [trace] [system.CModule] Loading "db" application component
+2012/07/28 00:45:54 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/28 00:45:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `google_search_terms`
+2012/07/28 00:45:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `google_search_terms`
+2012/07/28 00:45:54 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 00:45:54 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:07:48 [trace] [system.CModule] Loading "log" application component
+2012/07/28 01:07:48 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/28 01:08:01 [trace] [system.CModule] Loading "log" application component
+2012/07/28 01:08:01 [trace] [system.CModule] Loading "db" application component
+2012/07/28 01:08:01 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/28 01:08:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `google_search_terms`
+2012/07/28 01:08:01 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `google_search_terms`
+2012/07/28 01:08:01 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:01 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:01 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:01 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:01 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:01 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:01 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:01 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:01 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:01 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:16 [trace] [system.CModule] Loading "log" application component
+2012/07/28 01:08:16 [trace] [system.CModule] Loading "db" application component
+2012/07/28 01:08:16 [trace] [system.db.CDbConnection] Opening DB connection
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `google_search_terms`
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `google_search_terms`
+2012/07/28 01:08:16 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:16 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:16 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:16 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:16 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:16 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:16 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:16 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/28 01:08:16 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
+2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)

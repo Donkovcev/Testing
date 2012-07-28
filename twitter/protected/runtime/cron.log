@@ -16,3 +16,73 @@ Stack trace:
 #0 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
 #1 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
 
+2012/07/28 00:10:01 [error] [php] require_once(../fake_data_generator/autoload.php): failed to open stream: No such file or directory (C:\wamp\www\twitter\protected\commands\TestCommand.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#2 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 00:10:24 [error] [php] require_once(../../fake_data_generator/autoload.php): failed to open stream: No such file or directory (C:\wamp\www\twitter\protected\commands\TestCommand.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#2 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 00:10:42 [error] [php] require_once(../../../fake_data_generator/autoload.php): failed to open stream: No such file or directory (C:\wamp\www\twitter\protected\commands\TestCommand.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#2 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 00:11:17 [error] [php] require_once(../../../../fake_data_generator/autoload.php): failed to open stream: No such file or directory (C:\wamp\www\twitter\protected\commands\TestCommand.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#2 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 00:11:43 [error] [php] require_once(./../../../fake_data_generator/autoload.php): failed to open stream: No such file or directory (C:\wamp\www\twitter\protected\commands\TestCommand.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#2 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 00:11:56 [error] [php] require_once(./../../fake_data_generator/autoload.php): failed to open stream: No such file or directory (C:\wamp\www\twitter\protected\commands\TestCommand.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#2 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 00:12:06 [error] [php] require_once(./../fake_data_generator/autoload.php): failed to open stream: No such file or directory (C:\wamp\www\twitter\protected\commands\TestCommand.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#2 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 00:13:44 [error] [php] require_once(../../fake_data_generator/autoload.php): failed to open stream: No such file or directory (C:\wamp\www\twitter\protected\commands\TestCommand.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#2 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 00:14:58 [error] [php] require_once(../../fake_data_generator/autoload.php): failed to open stream: No such file or directory (C:\wamp\www\twitter\protected\commands\TestCommand.php:8)
+Stack trace:
+#0 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#2 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 00:15:31 [error] [php] require_once(C:\wamp\www\twitter\protected../fake_data_generator/autoload.php): failed to open stream: No such file or directory (C:\wamp\www\twitter\protected\commands\TestCommand.php:7)
+Stack trace:
+#0 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#2 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 00:45:14 [error] [php] Undefined offset: 0 (C:\wamp\www\twitter\protected\commands\TestCommand.php:23)
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#1 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/28 01:07:48 [error] [php] Undefined offset: 1 (C:\wamp\www\twitter\protected\commands\TestCommand.php:16)
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#1 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
