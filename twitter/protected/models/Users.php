@@ -95,4 +95,11 @@ class Users extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        
+        protected function afterSave()
+        {
+            Yii::app()->controller->redirect(array('users/index'));
+                return true;
+        }
 }

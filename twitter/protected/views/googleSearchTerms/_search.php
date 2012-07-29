@@ -6,17 +6,12 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'term'); ?>
 		<?php echo $form->textArea($model,'term',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Search', array('class'=>'btn')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
