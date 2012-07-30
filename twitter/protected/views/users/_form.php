@@ -5,9 +5,8 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-    
         <?php echo $form->errorSummary($model, '<div class="alert alert-error">', '</div>'); ?>
-    
+
 
 	<div>
 		<?php echo $form->labelEx($model,'name'); ?>
@@ -28,7 +27,7 @@
 	</div>
 
 	<div class="buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-primary')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Создать' : 'Сохранить', array('class'=>'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

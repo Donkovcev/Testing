@@ -1,17 +1,34 @@
 <?php
-$this->breadcrumbs=array(
-	'Tweets',
+$this->breadcrumbs = array(
+	'Записи (твиты)',
 );
 
-$this->menu=array(
-	array('label'=>'Create Tweets', 'url'=>array('create')),
-	array('label'=>'Manage Tweets', 'url'=>array('admin')),
+$this->menu = array(
+	array('label' => 'Создать', 'url' => array('create')),
+	array('label' => 'Администрирование', 'url' => array('admin')),
 );
+
+$labels = Tweets::model()->attributeLabels();
 ?>
 
-<h1>Tweets</h1>
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th><?php echo $labels['text']; ?></th>
+        <th><?php echo $labels['users_id']; ?></th>
+    </tr>
+
+	<?php
+	$this->widget('zii.widgets.CListView', array(
+		'dataProvider' => $dataProvider,
+		'itemView' => '_view',
+                'pager' => array(
+                    'header' => '',
+                    'firstPageLabel' => '<<',
+                    'prevPageLabel' => '<',
+                    'nextPageLabel' => '>',
+                    'lastPageLabel' => '>>',
+                )
+	));
+	?>
+</table>

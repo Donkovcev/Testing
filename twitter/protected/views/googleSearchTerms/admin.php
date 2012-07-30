@@ -1,12 +1,13 @@
 <?php
-$this->breadcrumbs=array(
-	'Поисковые запросы'=>array('index'),
-	'Управление',
+
+$this->breadcrumbs = array(
+    'Поисковые запросы' => array('index'),
+    'Администрирование',
 );
 
-$this->menu=array(
-	array('label'=>'Все запросы', 'url'=>array('index')),
-	array('label'=>'Создать', 'url'=>array('create')),
+$this->menu = array(
+    array('label' => 'Все запросы', 'url' => array('index')),
+    array('label' => 'Создать', 'url' => array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -23,16 +24,24 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h2>Manage Google Search Terms</h2>
+<?php
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'google-search-terms-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'term',
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+$this->widget('zii.widgets.grid.CGridView', array(
+    'id' => 'google-search-terms-grid',
+    'dataProvider' => $model->search(),
+    'filter' => $model,
+    'columns' => array(
+        'term',
+        array(
+            'class' => 'CButtonColumn',
+        ),
+    ),
+    'pager' => array(
+        'header' => '',
+        'firstPageLabel' => '<<',
+        'prevPageLabel' => '<',
+        'nextPageLabel' => '>',
+        'lastPageLabel' => '>>',
+    )
+));
+?>

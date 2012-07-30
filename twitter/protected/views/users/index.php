@@ -4,19 +4,18 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-    array('label' => 'Создать пользователя', 'url' => array('create')),
-    array('label' => 'Управление пользователями', 'url' => array('admin')),
+    array('label' => 'Создать', 'url' => array('create')),
+    array('label' => 'Администрирование', 'url' => array('admin')),
 );
 
 $labels = Users::model()->attributeLabels();
 
 ?>
 
-<h2>Пользователи</h2>
 <table class="table table-bordered table-striped">
     <tr>
-        <th><?= $labels['name']; ?></th>
-        <th><?= $labels['google_search_terms_id']; ?></th>
+        <th><?php echo $labels['name']; ?></th>
+        <th><?php echo $labels['google_search_terms_id']; ?></th>
     </tr>
 
     <?php
@@ -24,6 +23,7 @@ $labels = Users::model()->attributeLabels();
         'dataProvider' => $dataProvider,
         'itemView' => '_view',
         'pager' => array(
+            'header' => '',
             'firstPageLabel' => '<<',
             'prevPageLabel' => '<',
             'nextPageLabel' => '>',

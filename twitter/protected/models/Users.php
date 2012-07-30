@@ -15,6 +15,7 @@
  */
 class Users extends CActiveRecord
 {
+	public $googleSearchTerms_search;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -46,7 +47,7 @@ class Users extends CActiveRecord
 			array('name, link', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, link, google_search_terms_id', 'safe', 'on'=>'search'),
+			array('id, name, link, googleSearchTerms_search', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -86,17 +87,28 @@ class Users extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
+		$criteria->with = array('googleSearchTerms');
 
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('link',$this->link,true);
-		$criteria->compare('google_search_terms_id',$this->google_search_terms_id);
+		$criteria->compare('googleSearchTerms.term',$this->googleSearchTerms_search, true);
+
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+			'sort' => array(
+				'attributes' => array(
+					'googleSearchTerms_search' => array(
+						'asc' => 'googleSearchTerms.term',
+						'desc' => 'googleSearchTerms.term DESC',
+					),
+					'*',
+				),
+			),
 		));
 	}
-        
-        
+
+
         protected function afterSave()
         {
             Yii::app()->controller->redirect(array('users/index'));

@@ -1,19 +1,17 @@
 <?php
 $this->breadcrumbs=array(
-	'Tags'=>array('index'),
-	$model->id,
+	'Теги'=>array('index'),
+	$model->value,
 );
 
 $this->menu=array(
-	array('label'=>'List Tags', 'url'=>array('index')),
-	array('label'=>'Create Tags', 'url'=>array('create')),
-	array('label'=>'Update Tags', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Tags', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Tags', 'url'=>array('admin')),
+	array('label'=>'Все теги', 'url'=>array('index')),
+	array('label'=>'Создать', 'url'=>array('create')),
+	array('label'=>'Редактировать', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Удалить', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Администрирование', 'url'=>array('admin')),
 );
 ?>
-
-<h1>View Tags #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

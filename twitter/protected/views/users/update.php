@@ -6,13 +6,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Список пользователей', 'url'=>array('index')),
-	array('label'=>'Создать пользователя', 'url'=>array('create')),
-	array('label'=>'Просмотр пользователя', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Управление пользователями', 'url'=>array('admin')),
+	array('label'=>'Все пользователи', 'url'=>array('index')),
+	array('label'=>'Создать', 'url'=>array('create')),
+	array('label'=>'Просмотр', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Администрирование', 'url'=>array('admin')),
 );
 ?>
-
-<h2>Редактирование пользователя "<?php echo $model->name; ?>"</h2>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

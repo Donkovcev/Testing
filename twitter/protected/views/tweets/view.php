@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Tweets'=>array('index'),
+	'Записи (твиты)'=>array('index'),
 	$model->id,
 );
 
 $this->menu=array(
-	array('label'=>'List Tweets', 'url'=>array('index')),
-	array('label'=>'Create Tweets', 'url'=>array('create')),
-	array('label'=>'Update Tweets', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Tweets', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Tweets', 'url'=>array('admin')),
+	array('label'=>'Все записи', 'url'=>array('index')),
+	array('label'=>'Создать', 'url'=>array('create')),
+	array('label'=>'Редактировать', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Удалить', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Администрирование', 'url'=>array('admin')),
 );
 ?>
 
@@ -18,7 +18,6 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id',
 		'text',
 		'users_id',
 	),

@@ -1,15 +1,13 @@
 <?php
 $this->breadcrumbs=array(
-	'Tags'=>array('index'),
-	'Create',
+	'Теги'=>array('index'),
+	'Создание',
 );
 
 $this->menu=array(
-	array('label'=>'List Tags', 'url'=>array('index')),
-	array('label'=>'Manage Tags', 'url'=>array('admin')),
+	array('label'=>'Все теги', 'url'=>array('index')),
+	array('label'=>'Администрирование', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Create Tags</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

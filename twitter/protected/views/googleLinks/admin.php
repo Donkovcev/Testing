@@ -1,12 +1,13 @@
 <?php
-$this->breadcrumbs=array(
-	'Google ссылки'=>array('index'),
-	'Управление',
+
+$this->breadcrumbs = array(
+    'Google ссылки' => array('index'),
+    'Администрирование',
 );
 
-$this->menu=array(
-	array('label'=>'Все ссылки', 'url'=>array('index')),
-	array('label'=>'Создать ссылку', 'url'=>array('create')),
+$this->menu = array(
+    array('label' => 'Все ссылки', 'url' => array('index')),
+    array('label' => 'Создать', 'url' => array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -23,24 +24,29 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h2>Управление ссылками</h2>
+<?php
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
-
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'google-links-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'link',
-		'google_search_terms_id',
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+$this->widget('zii.widgets.grid.CGridView', array(
+    'id' => 'google-links-grid',
+    'dataProvider' => $model->search(),
+    'filter' => $model,
+    'columns' => array(
+        'link',
+        array(
+            'type' => 'raw',
+            'value' => '$data->googleSearchTerms->term',
+            'name' => 'googleSearchTerms_search',
+        ),
+        array(
+            'class' => 'CButtonColumn',
+        ),
+    ),
+    'pager' => array(
+        'header' => '',
+        'firstPageLabel' => '<<',
+        'prevPageLabel' => '<',
+        'nextPageLabel' => '>',
+        'lastPageLabel' => '>>',
+    )
+));
+?>

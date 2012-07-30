@@ -5,26 +5,23 @@ $this->breadcrumbs = array(
 
 $this->menu = array(
     array('label' => 'Создать', 'url' => array('create')),
-    array('label' => 'Управление', 'url' => array('admin')),
+    array('label' => 'Администрирование', 'url' => array('admin')),
 );
 
 $labels = GoogleSearchTerms::model()->attributeLabels();
+
 ?>
-
-<h2>Поисковые запросы</h2>
-
-
-
 
 <table class="table table-bordered table-striped">
     <tr>
-        <th><?= $labels['term']; ?></th>
+        <th><?php echo $labels['term']; ?></th>
     </tr>
     <?php
     $this->widget('zii.widgets.CListView', array(
         'dataProvider' => $dataProvider,
         'itemView' => '_view',
         'pager' => array(
+            'header' => '',
             'firstPageLabel' => '<<',
             'prevPageLabel' => '<',
             'nextPageLabel' => '>',

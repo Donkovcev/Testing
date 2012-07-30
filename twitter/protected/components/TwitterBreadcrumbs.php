@@ -62,7 +62,7 @@ class TwitterBreadcrumbs extends CWidget {
         echo CHtml::openTag($this->tagName, $this->htmlOptions) . "\n";
         $links = array();
         if ($this->homeLink === null)
-            $links[] = CHtml::link(Yii::t('zii', 'Home'), Yii::app()->homeUrl);
+            $links[] = CHtml::link(Yii::t('zii', 'Главная'), Yii::app()->homeUrl);
         else if ($this->homeLink !== false)
             $links[] = $this->homeLink;
         foreach ($this->links as $label => $url) {

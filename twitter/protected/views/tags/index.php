@@ -1,17 +1,34 @@
 <?php
-$this->breadcrumbs=array(
-	'Tags',
+
+$this->breadcrumbs = array(
+	'Теги',
 );
 
-$this->menu=array(
-	array('label'=>'Create Tags', 'url'=>array('create')),
-	array('label'=>'Manage Tags', 'url'=>array('admin')),
+$this->menu = array(
+	array('label' => 'Создать', 'url' => array('create')),
+	array('label' => 'Администрирование', 'url' => array('admin')),
 );
+
+$labels = Tags::model()->attributeLabels();
+
 ?>
 
-<h1>Tags</h1>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th><?php echo $labels['term']; ?></th>
+    </tr>
+<?php
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+$this->widget('zii.widgets.CListView', array(
+	'dataProvider' => $dataProvider,
+	'itemView' => '_view',
+        'pager' => array(
+            'header' => '',
+            'firstPageLabel' => '<<',
+            'prevPageLabel' => '<',
+            'nextPageLabel' => '>',
+            'lastPageLabel' => '>>',
+        )
+));
+?>
+</table>

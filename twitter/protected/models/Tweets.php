@@ -13,6 +13,7 @@
  */
 class Tweets extends CActiveRecord
 {
+	public $users_search;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -44,7 +45,7 @@ class Tweets extends CActiveRecord
 			array('text', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, text, users_id', 'safe', 'on'=>'search'),
+			array('id, text, users_search', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -82,12 +83,22 @@ class Tweets extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
+		$criteria->with = array('users');
 
 		$criteria->compare('text',$this->text,true);
-		$criteria->compare('users_id',$this->users_id);
+		$criteria->compare('users.name',$this->users_search, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+			'sort' => array(
+				'attributes' => array(
+					'users_search' => array(
+						'asc' => 'users.name',
+						'desc' => 'users.name DESC',
+					),
+					'*',
+				),
+			),
 		));
 	}
 }

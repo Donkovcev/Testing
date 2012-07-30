@@ -1,18 +1,16 @@
 <?php
 $this->breadcrumbs=array(
-	'Tweets'=>array('index'),
+	'Записи (твиты)'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Редактирование',
 );
 
 $this->menu=array(
-	array('label'=>'List Tweets', 'url'=>array('index')),
-	array('label'=>'Create Tweets', 'url'=>array('create')),
-	array('label'=>'View Tweets', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Tweets', 'url'=>array('admin')),
+	array('label'=>'Все записи', 'url'=>array('index')),
+	array('label'=>'Создать', 'url'=>array('create')),
+	array('label'=>'Просмотр', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Администрирование', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Update Tweets <?php echo $model->id; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

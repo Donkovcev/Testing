@@ -22,8 +22,8 @@
         <!--[if lt IE 9]>
           <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-		
-		
+
+
     </head>
 
     <body>
@@ -37,25 +37,12 @@
                         <span class="icon-bar"></span>
                     </a>
                     <a class="brand" href="/">Twitter Parser</a>
-                    <!--
-                    <div class="btn-group pull-right">
-                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="icon-user"></i> Username
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Profile</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Sign Out</a></li>
-                        </ul>
-                    </div>
-                    -->
                     <div class="nav-collapse">
                         <?php
                         $this->widget('zii.widgets.CMenu', array(
                             'htmlOptions' => array('class' => 'nav'),
                             'items' => array(
-                                array('label' => 'Home', 'url' => array('/site/index')),
+                                array('label' => 'Главная', 'url' => array('/site/index')),
                                 array('label' => 'Поисковые запросы', 'url' => array('/GoogleSearchTerms/index')),
                                 array('label' => 'Найденные ссылки', 'url' => array('/GoogleLinks/index')),
                                 array('label' => 'Найденные пользователи', 'url' => array('/Users/index')),
@@ -72,17 +59,21 @@
 
         <div class="container-fluid">
             <div class="row-fluid">
+                <div class="span9">
+                    <?php if (isset($this->breadcrumbs)): ?>
+                        <?php
+                        $this->widget('TwitterBreadcrumbs', array(
+                            'links' => $this->breadcrumbs,
+                        ));
+                        ?><!-- breadcrumbs -->
+                    <?php endif ?>
+                    <div class="hero-unit">
+                        <?php echo $content; ?>
+                        <div class="clear"></div>
+                    </div>
+                </div><!--/span-->
                 <div class="span3">
                     <div class="well sidebar-nav">
-                        <!--
-                        <ul class="nav nav-list">
-                            <li class="nav-header">Sidebar</li>
-                            <li class="active"><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                        </ul>
-                        -->
                         <?php
                         //$this->widget('SidebarPortlet');
 
@@ -97,33 +88,17 @@
                         ?>
                     </div><!--/.well -->
                 </div><!--/span-->
-                <div class="span9">
-                    <?php if (isset($this->breadcrumbs)): ?>
-                        <?php
-                        $this->widget('TwitterBreadcrumbs', array(
-                            'links' => $this->breadcrumbs,
-                        ));
-                        ?><!-- breadcrumbs -->
-                    <?php endif ?>	
-                    <div class="hero-unit">
-                        <?php echo $content; ?>
-                        <div class="clear"></div>
-                    </div>
-                </div><!--/span-->
             </div><!--/row-->
 
             <hr>
 
             <footer>
-                <p>&copy; Company 2012</p>
+                <!--<p>&copy; Company 2012</p>-->
             </footer>
 
         </div><!--/.fluid-container-->
 
-        <!-- Le javascript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <!--<script src="./assets/js/jquery.js"></script>-->
+
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/bootstrap-transition.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/bootstrap-alert.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/assets/js/bootstrap-modal.js"></script>
