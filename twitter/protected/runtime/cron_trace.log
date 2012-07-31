@@ -137,3 +137,16 @@
 2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
 2012/07/28 01:08:16 [trace] [system.db.ar.CActiveRecord] GoogleSearchTerms.insert()
 2012/07/28 01:08:16 [trace] [system.db.CDbCommand] Executing SQL: INSERT INTO `google_search_terms` (`term`) VALUES (:yp0)
+2012/07/30 20:50:06 [trace] [system.CModule] Loading "log" application component
+2012/07/30 20:50:06 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/30 20:50:58 [trace] [system.CModule] Loading "log" application component
+2012/07/30 20:50:58 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/30 20:52:26 [trace] [system.CModule] Loading "log" application component
+2012/07/30 20:52:26 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/30 20:53:13 [trace] [system.CModule] Loading "log" application component
+2012/07/30 20:53:13 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/30 20:56:34 [trace] [system.CModule] Loading "log" application component
+2012/07/30 20:56:34 [trace] [system.CModule] Loading "errorHandler" application component
+2012/07/30 20:58:39 [trace] [system.CModule] Loading "log" application component
+2012/07/30 21:10:49 [trace] [system.CModule] Loading "log" application component
+2012/07/30 21:12:32 [trace] [system.CModule] Loading "log" application component

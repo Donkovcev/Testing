@@ -14,6 +14,11 @@
 		<?php echo $form->label($model,'googleSearchTerms_search'); ?>
 		<?php echo $form->textField($model,'googleSearchTerms_search'); ?>
 	</div>
+    
+	<div>
+		<?php echo $form->label($model,'checked'); ?>
+		<?php echo $form->textField($model,'checked'); // TODO: Сделать нормальный поиск ?>
+	</div>
 
 	<div class="buttons">
 		<?php echo CHtml::submitButton('Поиск', array('class'=>'btn')); ?>

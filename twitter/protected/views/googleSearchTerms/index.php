@@ -6,6 +6,7 @@ $this->breadcrumbs = array(
 $this->menu = array(
     array('label' => 'Создать', 'url' => array('create')),
     array('label' => 'Администрирование', 'url' => array('admin')),
+    array('label' => 'Парсинг', 'url' => array('parse')),
 );
 
 $labels = GoogleSearchTerms::model()->attributeLabels();

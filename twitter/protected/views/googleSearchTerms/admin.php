@@ -8,6 +8,7 @@ $this->breadcrumbs = array(
 $this->menu = array(
     array('label' => 'Все запросы', 'url' => array('index')),
     array('label' => 'Создать', 'url' => array('create')),
+    array('label' => 'Парсинг', 'url' => array('parse')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

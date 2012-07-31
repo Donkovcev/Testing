@@ -19,6 +19,7 @@ $labels = GoogleLinks::model()->attributeLabels();
     <tr>
         <th><?= $labels['link']; ?></th>
         <th><?= $labels['google_search_terms_id']; ?></th>
+        <th><?= $labels['checked']; ?></th>
     </tr>
     <?php
     $this->widget('zii.widgets.CListView', array(

@@ -1,5 +1,5 @@
 <?php
-
+// TODO: Добавить возможность выбора языка откуда парсить
 /**
  * This is the model class for table "google_search_terms".
  *

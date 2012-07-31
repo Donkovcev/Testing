@@ -86,3 +86,55 @@ Stack trace:
 #0 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
 #1 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
 
+2012/07/30 20:50:06 [error] [php] include(C:\wamp\www\twitter\protected\vendors\Faker\Factory.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:424)
+Stack trace:
+#0 C:\wamp\www\twitter\protected\commands\TestCommand.php(13): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\console\CConsoleCommandRunner.php(65): TestCommand->run()
+#2 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#4 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/30 20:50:58 [error] [php] include(C:\wamp\www\twitter\protected\vendors\Faker\Provider\en_US\Lorem.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:424)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\wamp\www\twitter\protected\vendors\Faker\Factory.php(42): class_exists()
+#2 C:\wamp\www\twitter\protected\vendors\Faker\Factory.php(24): findProviderClassname()
+#3 C:\wamp\www\twitter\protected\vendors\Faker\Factory.php(15): getProviderClassname()
+#4 C:\wamp\www\twitter\protected\commands\TestCommand.php(13): create()
+#5 C:\wamp\www\yii\framework\console\CConsoleCommandRunner.php(65): TestCommand->run()
+#6 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#8 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/30 20:52:26 [error] [php] include(C:\wamp\www\twitter\protected\vendors\Faker\Provider\en_US\Lorem.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:424)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\wamp\www\twitter\protected\vendors\Faker\Factory.php(42): class_exists()
+#2 C:\wamp\www\twitter\protected\vendors\Faker\Factory.php(24): findProviderClassname()
+#3 C:\wamp\www\twitter\protected\vendors\Faker\Factory.php(15): getProviderClassname()
+#4 C:\wamp\www\twitter\protected\commands\TestCommand.php(13): create()
+#5 C:\wamp\www\yii\framework\console\CConsoleCommandRunner.php(65): TestCommand->run()
+#6 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#8 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/30 20:53:13 [error] [php] include(C:\wamp\www\twitter\protected\vendors\Faker\Provider\en_US\Lorem.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:424)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\wamp\www\twitter\protected\vendors\Faker\Factory.php(42): class_exists()
+#2 C:\wamp\www\twitter\protected\vendors\Faker\Factory.php(24): findProviderClassname()
+#3 C:\wamp\www\twitter\protected\vendors\Faker\Factory.php(15): getProviderClassname()
+#4 C:\wamp\www\twitter\protected\commands\TestCommand.php(13): create()
+#5 C:\wamp\www\yii\framework\console\CConsoleCommandRunner.php(65): TestCommand->run()
+#6 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#8 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+
+2012/07/30 20:56:34 [error] [php] include(C:\wamp\www\twitter\protected\vendors\Factory.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:424)
+Stack trace:
+#0 C:\wamp\www\twitter\protected\commands\TestCommand.php(13): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\console\CConsoleCommandRunner.php(65): TestCommand->run()
+#2 C:\wamp\www\yii\framework\console\CConsoleApplication.php(91): CConsoleCommandRunner->run()
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CConsoleApplication->processRequest()
+#4 C:\wamp\www\twitter\cron.php(13): CConsoleApplication->run()
+

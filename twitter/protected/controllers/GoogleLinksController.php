@@ -54,7 +54,7 @@ class GoogleLinksController extends Controller {
          */
         $dataProvider = new CActiveDataProvider('GoogleLinks', array(
                     'criteria' => array(
-                        'condition' => 'id='. $id,
+                        'condition' => 'id=' . $id,
                     ),
                 ));
         $this->render('view', array(
@@ -68,6 +68,13 @@ class GoogleLinksController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
     public function actionCreate() {
+        $googleSearchTerms = GoogleSearchTerms::model()->find('id>=:id', array(':id' => 1));
+
+        if (count($googleSearchTerms) == 0) {
+            $this->redirect(array('GoogleSearchTerms/index'));
+        }
+
+
         $model = new GoogleLinks;
 
         // Uncomment the following line if AJAX validation is needed
@@ -75,6 +82,7 @@ class GoogleLinksController extends Controller {
 
         if (isset($_POST['GoogleLinks'])) {
             $model->attributes = $_POST['GoogleLinks'];
+            $model->checked = GoogleLinks::LINK_NOT_CHECKED;
             if ($model->save())
                 $this->redirect(array('view', 'id' => $model->id));
         }

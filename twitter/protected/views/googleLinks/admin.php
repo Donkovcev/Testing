@@ -37,6 +37,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
             'value' => '$data->googleSearchTerms->term',
             'name' => 'googleSearchTerms_search',
         ),
+        'checked',
         array(
             'class' => 'CButtonColumn',
         ),

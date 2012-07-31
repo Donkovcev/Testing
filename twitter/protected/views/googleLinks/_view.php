@@ -6,4 +6,7 @@
     <td>
         <?php echo CHtml::encode($data->googleSearchTerms->term); ?>
     </td>
+    <td>
+        <?php echo CHtml::encode($data->checked); ?>
+    </td>
 </tr>
