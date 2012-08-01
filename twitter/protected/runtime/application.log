@@ -5682,3 +5682,63 @@ Stack trace:
 REQUEST_URI=/twitter/index.php?r=systemList/view&id=1
 HTTP_REFERER=http://localhost/twitter/index.php?r=systemList/create
 ---
+2012/08/01 15:42:06 [error] [php] file_get_contents(http://twitter.com/%23!/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ (C:\wamp\www\twitter\protected\components\GoogleLinksChecker.php:18)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GoogleLinksController->actionCheck()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GoogleLinksController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GoogleLinksController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(266): GoogleLinksController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(276): GoogleLinksController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\twitter\index.php(13): CWebApplication->run()
+REQUEST_URI=/twitter/index.php?r=googleLinks/check
+in C:\wamp\www\twitter\protected\components\GoogleLinksChecker.php (18)
+in C:\wamp\www\twitter\protected\controllers\GoogleLinksController.php (164)
+in C:\wamp\www\twitter\index.php (13)
+2012/08/01 15:46:26 [error] [php] file_get_contents(http://twitter.com/%23!/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ (C:\wamp\www\twitter\protected\components\GoogleLinksChecker.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GoogleLinksController->actionCheck()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GoogleLinksController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GoogleLinksController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(266): GoogleLinksController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(276): GoogleLinksController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\twitter\index.php(13): CWebApplication->run()
+REQUEST_URI=/twitter/index.php?r=googleLinks/check
+in C:\wamp\www\twitter\protected\components\GoogleLinksChecker.php (21)
+in C:\wamp\www\twitter\protected\controllers\GoogleLinksController.php (164)
+in C:\wamp\www\twitter\index.php (13)
+2012/08/01 15:48:36 [error] [php] file_get_contents(http://twitter.com/%23!/) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ (C:\wamp\www\twitter\protected\components\GoogleLinksChecker.php:20)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GoogleLinksController->actionCheck()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GoogleLinksController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GoogleLinksController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(266): GoogleLinksController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(276): GoogleLinksController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\twitter\index.php(13): CWebApplication->run()
+REQUEST_URI=/twitter/index.php?r=googleLinks/check
+in C:\wamp\www\twitter\protected\components\GoogleLinksChecker.php (20)
+in C:\wamp\www\twitter\protected\controllers\GoogleLinksController.php (164)
+in C:\wamp\www\twitter\index.php (13)

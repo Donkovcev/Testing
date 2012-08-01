@@ -6,6 +6,7 @@ $this->breadcrumbs = array(
 $this->menu = array(
     array('label' => 'Создать ссылку', 'url' => array('create')),
     array('label' => 'Администрирование', 'url' => array('admin')),
+    array('label' => 'Проверить ссылки', 'url' => array('check')),
 );
 
 $labels = GoogleLinks::model()->attributeLabels();

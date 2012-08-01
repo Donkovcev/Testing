@@ -33,7 +33,7 @@ class GoogleLinksController extends Controller {
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions' => array('admin', 'delete'),
+                'actions' => array('admin', 'delete', 'check'),
                 'users' => array('admin'),
             ),
             array('deny', // deny all users
@@ -154,6 +154,15 @@ class GoogleLinksController extends Controller {
         $this->render('admin', array(
             'model' => $model,
         ));
+    }
+
+    /**
+     * Check all links for error
+     */
+    public function actionCheck() {
+		$googleLinksChecker = new GoogleLinksChecker();
+		$googleLinksChecker->checkAll();
+		$this->redirect(array('index'));
     }
 
     /**
