@@ -48,6 +48,7 @@
                                 array('label' => 'Найденные пользователи', 'url' => array('/Users/index')),
                                 array('label' => 'Скаченные записи', 'url' => array('/Tweets/index')),
                                 array('label' => 'Авторизация', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
+								array('label' => 'Системные списки', 'url' => array('/SystemList/index')),
                                 array('label' => 'Выход (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                             ),
                         ));

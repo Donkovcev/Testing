@@ -5612,3 +5612,73 @@ Stack trace:
 REQUEST_URI=/twitter/index.php?r=googleLinks/create
 HTTP_REFERER=http://localhost/twitter/index.php?r=GoogleLinks/index
 ---
+2012/08/01 10:14:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\wamp\www\twitter\protected\controllers\GoogleSearchTermsController.php:113
+Stack trace:
+#0 [internal function]: GoogleSearchTermsController->actionDelete('34')
+#1 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(GoogleSearchTermsController), Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(GoogleSearchTermsController), Object(ReflectionMethod), Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('delete')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('googleSearchTer...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\twitter\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/twitter/index.php?r=googleSearchTerms/delete&id=34
+HTTP_REFERER=http://localhost/twitter/index.php?r=googleSearchTerms/admin
+---
+2012/08/01 10:14:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in C:\wamp\www\twitter\protected\controllers\GoogleSearchTermsController.php:113
+Stack trace:
+#0 [internal function]: GoogleSearchTermsController->actionDelete('34')
+#1 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(GoogleSearchTermsController), Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(GoogleSearchTermsController), Object(ReflectionMethod), Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('delete')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('googleSearchTer...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\twitter\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/twitter/index.php?r=googleSearchTerms/delete&id=34
+HTTP_REFERER=http://localhost/twitter/index.php?r=googleSearchTerms/admin
+---
+2012/08/01 10:46:29 [error] [exception.CException] exception 'CException' with message 'Property "SystemList.name" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('name')
+#1 C:\wamp\www\twitter\protected\views\systemList\view.php(4): CActiveRecord->__get('name')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\twi...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\twi...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\twi...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\wamp\www\twitter\protected\controllers\SystemListController.php(55): CController->render('view', Array)
+#7 [internal function]: SystemListController->actionView('1')
+#8 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(SystemListController), Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(SystemListController), Object(ReflectionMethod), Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('systemList/view')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\twitter\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/twitter/index.php?r=systemList/view&id=1
+HTTP_REFERER=http://localhost/twitter/index.php?r=systemList/create
+---
